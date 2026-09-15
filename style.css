@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+html, body {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.spoon-and-fork-logo {
+    display: flex;
+    width: 67px;
+    height: auto;
+    padding: 0.75rem;
+    background-color: #333;
+    border-radius: 1rem;
+    opacity: 90%;
+}
+
+.heading-parent {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-direction: row;
+    margin-bottom: 1rem;
+}
+
+.introduction {
+    display: inline-block;
+    width: 100%;
+    margin: 2rem auto 3rem 3rem;
+}
+
+.hero-heading {
+    color: #4b4b4b;
+    font-size: 3rem;
+}
+
+.p-subheading {
+    display: inline-block;
+}
+
+.hero-subheading {
+    color: #2e2e2e;
+    font-size: 1.1rem;
+}
+
+.recipes-list {
+    display: inline-block;
+}
+
+.recipe-links a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 3rem;
+    list-style: none;
+    text-decoration: none;
+    color: #7e7e7e;
+    font-size: 1.2rem;
+    font-weight: 450;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.recipe-links a:hover {
+    color: #333;
+}
+
+.wave-element {
+    margin-top: 8.5rem;
+    height: auto;
+    width: auto;
+}
