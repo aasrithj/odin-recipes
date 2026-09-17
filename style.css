@@ -20,8 +20,10 @@ body {
 
 html, body {
     max-width: 100%;
-    overflow: hidden;
+    overflow-y: hidden;
 }
+
+/* Home Section */
 
 .spoon-and-fork-logo {
     display: flex;
@@ -87,4 +89,105 @@ html, body {
     margin-top: 8.5rem;
     height: auto;
     width: auto;
+}
+
+/* Pizza Section */
+
+html.special-page-layout-1, body.special-page-layout-2 {
+    margin-left: 3rem;
+    overflow-y: auto;
+}
+
+.home-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    margin: 3rem 0 2rem 0;
+    background-color: #333;
+    width: auto;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.home-button:hover {
+    background-color: #1b1b1b;
+    transform: scale(1.015);
+}
+
+.home-button:active {
+    transform: scale(0.98);
+}
+
+.hero-text {
+    display: flex;
+}
+
+.image-parent {
+    display: flex;
+    margin: 1rem 0 5rem 0;
+}
+
+.image-of-pizza {
+    border-radius: 3.5rem;
+    corner-shape: squircle;
+}
+
+.recipe-text-content {
+    display: flex;
+    margin-bottom: 2.5rem;
+    flex-direction: column;
+}
+
+.ingredients-text-content {
+    display: flex;
+    margin-bottom: 2.5rem;
+    flex-direction: column;
+}
+
+.ingredients-list {
+    margin-left: 1.5rem;
+    line-height: 1.7;
+}
+
+.steps-list {
+    display: flex;
+    margin-bottom: 3rem;
+    flex-direction: column;
+}
+
+.steps-list {
+    list-style-type: decimal;
+    margin-left: 1.5rem;
+    line-height: 1.7;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #4b4b4b;
+}
+
+p, li, ol {
+    font-size: 1.05rem;
+    color: #2e2e2e;
+}
+
+/* Media Max Queries */
+
+@media (max-width: 768px) {
+    .hero-heading {
+        font-size: 2rem;
+    }
+
+    .hero-subheading {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 1350px) {
+    .wave-element {
+        margin-top: 1rem;
+    }
 }
