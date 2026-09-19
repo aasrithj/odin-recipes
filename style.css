@@ -20,7 +20,7 @@ body {
 
 html, body {
     max-width: 100%;
-    overflow-y: hidden;
+    overflow: hidden;
 }
 
 /* Home Section */
@@ -72,7 +72,7 @@ html, body {
     justify-content: flex-start;
     align-items: center;
     margin-left: 3rem;
-    list-style: none;
+    list-style: disc;
     text-decoration: none;
     color: #7e7e7e;
     font-size: 1.2rem;
@@ -119,6 +119,7 @@ html.special-page-layout-1, body.special-page-layout-2 {
 
 .home-button:active {
     transform: scale(0.98);
+    background-color: #333;
 }
 
 .hero-text {
@@ -159,7 +160,7 @@ html.special-page-layout-1, body.special-page-layout-2 {
 }
 
 .steps-list {
-    list-style-type: decimal;
+    list-style: disc;
     margin-left: 1.5rem;
     line-height: 1.7;
 }
@@ -172,6 +173,30 @@ h1 {
 p, li, ol {
     font-size: 1.05rem;
     color: #2e2e2e;
+}
+
+/* Salad Section */
+
+html.special-page-layout-3, body.special-page-layout-4 {
+    margin-left: 3rem;
+    overflow-y: auto;
+}
+
+.image-of-salad {
+    border-radius: 3.5rem;
+    corner-shape: squircle;
+}
+
+/* Hash Browns Section */
+
+html.special-page-layout-5, body.special-page-layout-6 {
+    margin-left: 3rem;
+    overflow-y: auto;
+}
+
+.image-of-hash-browns {
+    border-radius: 3.5rem;
+    corner-shape: squircle;
 }
 
 /* Media Max Queries */
@@ -189,5 +214,16 @@ p, li, ol {
 @media (max-width: 1350px) {
     .wave-element {
         margin-top: 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .recipe-links a {
+        font-size: 1rem;
+    }
+
+    .html.special-page-layout-1, body.special-page-layout-2, html.special-page-layout-3, body.special-page-layout-4, html.special-page-layout-5, body.special-page-layout-6 {
+        margin-left: 1rem;
     }
 }
